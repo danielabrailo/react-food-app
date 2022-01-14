@@ -4,6 +4,17 @@
     margin: 2rem auto;
     animation: meals-appear 1s ease-out forwards;
   }
+
+  .MealsLoading {
+    color: white;
+    place-items: center;
+    display: grid;
+  }
+
+  .MealsError {
+    text-align: center;
+    color: red;
+  }
   
   .meals ul {
     list-style: none;
@@ -21,4 +32,18 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .infinity-1 {
+    width:90px;
+    height:14px;
+    background: 
+      radial-gradient(circle 7px at bottom, #fff 92%,#0000 ) 0 0,
+      radial-gradient(circle 7px at top   , #fff 92%,#0000 ) 0 100%;
+    background-size:calc(100%/4) 50%;
+    background-repeat:repeat-x;
+    animation:i1 1s infinite;
+  }
+  @keyframes i1 {
+      80%,100% {background-position: calc(100%/3) 0,calc(100%/-3) 100%}
   }
